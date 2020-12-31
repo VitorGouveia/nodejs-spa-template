@@ -1,10 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- ----------------------- -->
+    <!-- Configurações da página -->
+    <!-- ----------------------- -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="A Node.js Single Page App" />
+
+    <!-- --------------------- -->
+    <!-- Informações da página -->
+    <!-- --------------------- -->
     <title>Single Page App</title>
-    <link rel="stylesheet" href="/static/css/layout.css">
+    <meta name="Author" content="Vitor Neves Gomes Gouveia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- -------------------- -->
+    <!-- Estilos e Javascript -->
+    <!-- -------------------- -->
+    <link rel="stylesheet" href="/static/css/layout.css" />
+    <script type="module" src="/static/js/index.js"></script>
+
+
+    <!-- ----------------------------------- -->
+    <!-- Configuração do Progressive Web App -->
+    <!-- ----------------------------------- -->
+    <!-- <link rel="manifest" href="/manifest.json" />
+    <script defer src="service-worker.js"></script> -->
+
+
+    <!-- ------- -->
+    <!-- Visuals -->
+    <!-- ------- -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/favicon-16x16.png" />
+    <link rel="shortcut icon" href="/static/assets/favicon.ico" />
+    <!--Cor do tema do browser-->
+    <meta name="theme-color" content="#5bd1d7" />
+  
+    <!-- microsoft -->
+    <meta name="msapplication-TileColor" content="#b91d47" />
+    <meta name="msapplication-config" content="/static/assets/browserconfig.xml" />
+  
+    <!-- apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/assets/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/static/assets/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Single Page App" />
+
+
+    <!-- --------- -->
+    <!-- META TAGS -->
+    <!-- --------- -->
+
+    <!-- Google / SEO -->
+    <meta itemprop="name" content="Single Page App" />
+    <meta itemprop="description" content="Single Page App with nodejs" />
+    <!--Url da imagem que vai aparecer nos resultados de pesquisa-->
+    <meta itemprop="image" content="" />
+
+    <!-- facebook -->
+    <!--Url do site-->
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="svelte pwa starter" />
+    <meta property="og:description" content="a pwa starter template for svelte" />
+    <!--Url da imagem que vai aparecer nos posts do facebook-->
+    <meta property="og:image" content="" />
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="svelte pwa starter" />
+    <meta name="twitter:description" content="a pwa starter template for svelte" />
+    <!--Url da imagem que vai aparecer nos posts do twitter-->
+    <meta name="twitter:image" content="" />
 </head>
 <body>
     <nav class="nav">
@@ -13,6 +83,8 @@
         <a href="/posts" class="nav__link" data-link>Posts</a>
         <a href="/settings" class="nav__link" data-link>Settings</a>
     </nav>
-    <script src="/static/js/index.js"></script>
+
+    <!--a <div id="app"> é responsável por mostrar o single page application-->
+    <div id="app"></div>
 </body>
 </html>
