@@ -79,3 +79,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     router();
 });
+
+//Configuração Service Worker
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+    console.log("Service Worker registrado com sucesso!")
+} else {
+    console.log("Erro de registro do Service Worker!")
+}
